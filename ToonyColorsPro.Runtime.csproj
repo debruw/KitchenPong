@@ -70,10 +70,10 @@
     <Compile Include="Assets\Toony Colors Pro\Scripts\TCP2_ShaderUpdateUnityTime.cs" />
     <None Include="Assets\Toony Colors Pro\Scripts\ToonyColorsPro.Runtime.asmdef" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Unity Games/KitchenPong/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Unity2d/KitchenPong/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Unity Games/KitchenPong/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Unity2d/KitchenPong/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
