@@ -99,10 +99,10 @@
     <None Include="Assets\Toony Colors Pro\Demo TCP2\Cat Demo Assets\Shaders\Cat Demo\UnlitVertexColorsTransparent.shader" />
     <None Include="Assets\Toony Colors Pro\Demo TCP2\Cat Demo Assets\Shaders\Cat Demo\UnityChan\Style 5 Skin.shader" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Unity2d/KitchenPong/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Unity Games/KitchenPong/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Unity2d/KitchenPong/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Unity Games/KitchenPong/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
