@@ -1,0 +1,4 @@
+#Tue Sep 08 22:15:43 EET 2020
+base.0=D\:\\Unity Games\\KitchenPong\\Temp\\gradleOut\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -63,10 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Minimalist Free v2.4.2\Editor\EditorGUILayoutExtended.cs" />
-    <Compile Include="Assets\Minimalist Free v2.4.2\Editor\MinimalistClipboard.cs" />
-    <Compile Include="Assets\Minimalist Free v2.4.2\Editor\MinimalistSkyEditor.cs" />
-    <Compile Include="Assets\Minimalist Free v2.4.2\Editor\MinimalistStandardEditor.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/Unity Games/KitchenPong/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -294,6 +291,9 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="JMOAssets_CartoonFXFreeWelcome">
+      <HintPath>D:/Unity Games/KitchenPong/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/Unity Games/KitchenPong/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -660,21 +660,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{518F5F10-D20C-89FC-E9A0-AE0A54A1B797}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{F951DC8B-4BC1-A754-8379-32132E49098A}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro2.Demo.csproj">
-      <Project>{F2293CBE-0B4E-13C7-94BB-4E30C9290756}</Project>
-      <Name>ToonyColorsPro2.Demo</Name>
-    </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro.Runtime.csproj">
-      <Project>{F140F9EE-4032-9051-AD6F-6EACE66D4ABD}</Project>
-      <Name>ToonyColorsPro.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro.Editor.csproj">
-      <Project>{31980811-A003-AB26-0EA1-4185007122C3}</Project>
-      <Name>ToonyColorsPro.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

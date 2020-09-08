@@ -9,6 +9,8 @@ TagManager:
   - Ceramic
   - Wood
   - Breakable
+  - Burner
+  - Coin
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EndPoint : MonoBehaviour
 {
     public GameObject Confetti;
-    public GameObject[] humans;
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,11 +14,14 @@ public class EndPoint : MonoBehaviour
             other.GetComponent<Rigidbody>().velocity = Vector3.zero;
             Confetti.SetActive(true);
             SoundManager.Instance.playSound(SoundManager.GameSounds.Win);
-            foreach (GameObject hmn in humans)
-            {
-                hmn.GetComponent<Animator>().SetTrigger("Cheer");
-            }
-            GameManager.Instance.Win();
+            GameManager.Instance.Cheer();
+            StartCoroutine(WaitAndcontinue());
         }
+    }
+
+    IEnumerator WaitAndcontinue()
+    {
+        yield return new WaitForSeconds(1f);
+        GameManager.Instance.GameWin();
     }
 }

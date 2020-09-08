@@ -204,7 +204,7 @@ MonoBehaviour:
   clamp: 0.4
   Stick1: {fileID: 1535121938067264682}
   Stick2: {fileID: 657255313}
-  fCamShakeImpulse: 0
+  fShakeImpulse: 0
 --- !u!1 &1535121938041268262
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,32 +393,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23632529899895004, guid: 1a863b49e24bbf946a41ac5be6afc6e7,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 23632529899895004, guid: 1a863b49e24bbf946a41ac5be6afc6e7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6e0b3658c4fdf0146906be910c711572, type: 2}
-    - target: {fileID: 23632529899895004, guid: 1a863b49e24bbf946a41ac5be6afc6e7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 284a9e1a7759c664d852b9c57774e9c9, type: 2}
-    - target: {fileID: 23632529899895004, guid: 1a863b49e24bbf946a41ac5be6afc6e7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[2]
-      value: 
-      objectReference: {fileID: 2100000, guid: 284a9e1a7759c664d852b9c57774e9c9, type: 2}
-    - target: {fileID: 33256470900297052, guid: 1a863b49e24bbf946a41ac5be6afc6e7,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 2534964839176971238, guid: e2b79c4c396a71942a0f2b0bdd724a3a,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a863b49e24bbf946a41ac5be6afc6e7, type: 3}
 --- !u!1 &1534268188371530540 stripped

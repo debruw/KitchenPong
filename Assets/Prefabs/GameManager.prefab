@@ -43,5 +43,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641edfbd45330ec49bcd0010531ef850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundManagerPrefab: {fileID: 4599610743964173871, guid: 9afb1eb78b5c94d449e5a35e8511b057,
+    type: 3}
   selecTedPan: {fileID: 0}
+  isGameOver: 0
+  currentLevel: 0
+  StartScene: {fileID: 0}
+  LevelText: {fileID: 0}
   MovementSlider: {fileID: 0}
+  RotationSlider: {fileID: 0}
+  SliderAndButton: {fileID: 0}
+  inGamePanel: {fileID: 0}
+  WinPanel: {fileID: 0}
+  LosePanel: {fileID: 0}
+  startPanel: {fileID: 0}
+  transition: {fileID: 0}
+  VibrationButton: {fileID: 0}
+  VibrateOn: {fileID: 21300000, guid: ba1725e8152290645b431c244ae5d459, type: 3}
+  VibrateOff: {fileID: 21300000, guid: 85402a0cc7a76d34aa2df7a57ad7d57e, type: 3}
+  Tutorial1: {fileID: 0}
+  Tuto11: {fileID: 0}
+  Tuto12: {fileID: 0}
+  Tutorial2: {fileID: 0}
+  Tuto21: {fileID: 0}
+  Tuto22: {fileID: 0}
+  Tutorial3: {fileID: 0}
