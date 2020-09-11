@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public GameObject selecTedPan;
     public bool isGameOver = false;
     public int currentLevel = 0;
-    int maxLevelNumber = 20;
+    int maxLevelNumber = 19;
     GameObject currentLevelObject;
     LevelProperties currentLevelProperties;
     public GameObject StartScene;
@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public GameObject WinPanel, LosePanel, startPanel, transition;
     public GameObject VibrationButton;
     public Sprite VibrateOn, VibrateOff;
+    public GameObject[] HelperTriangles;
     #endregion
 
     [Header("Tutorial things")]
@@ -67,7 +68,7 @@ public class GameManager : MonoBehaviour
         }
 
         //TODO Test için konuldu kaldırılacak
-        //currentLevel = 10;
+        //currentLevel = 9;
 
         if (currentLevel > maxLevelNumber)
         {
@@ -110,7 +111,7 @@ public class GameManager : MonoBehaviour
                 Tuto21.SetActive(true);
                 Tuto22.SetActive(false);
             }
-            else if (currentLevel == 10)
+            else if (currentLevel == 9)
             {
                 Tutorial3.SetActive(true);
             }
@@ -120,6 +121,10 @@ public class GameManager : MonoBehaviour
         if (currentLevel > 4)
         {
             RotationSlider.gameObject.SetActive(true);
+        }
+        if(currentLevel < 7)
+        {
+            HelperTriangles[currentLevel].SetActive(true);
         }
     }
 
@@ -164,11 +169,11 @@ public class GameManager : MonoBehaviour
 
     public void MoveSelectedPan()
     {
-        selecTedPan.transform.localPosition = new Vector3(selecTedPan.transform.localPosition.x, MovementSlider.value, selecTedPan.transform.localPosition.z);
+        selecTedPan.transform.localPosition = new Vector3(selecTedPan.transform.localPosition.x, (MovementSlider.value * 4) / 100, selecTedPan.transform.localPosition.z);
         if (Tuto12.activeSelf)
         {
             Tutorial1.SetActive(false);
-        }        
+        }
         if (Tutorial3.activeSelf)
         {
             Tutorial3.SetActive(false);
@@ -177,7 +182,7 @@ public class GameManager : MonoBehaviour
 
     public void RotateSelectedPan()
     {
-        selecTedPan.transform.localRotation = new Quaternion(RotationSlider.value, selecTedPan.transform.localRotation.y, selecTedPan.transform.localRotation.z, selecTedPan.transform.localRotation.w);
+        selecTedPan.transform.localRotation = new Quaternion((RotationSlider.value * 2) / 100, selecTedPan.transform.localRotation.y, selecTedPan.transform.localRotation.z, selecTedPan.transform.localRotation.w);
         if (Tuto22.activeSelf)
         {
             Tutorial2.SetActive(false);
@@ -217,16 +222,10 @@ public class GameManager : MonoBehaviour
             Tuto21.SetActive(true);
             Tuto22.SetActive(false);
         }
-        else if (currentLevel == 10)
+        else if (currentLevel == 9)
         {
             Tutorial3.SetActive(true);
         }
-    }
-
-    public void OkayButtonClick()
-    {
-        selecTedPan.GetComponent<SelectablePan>().CloseOutlines();
-        selecTedPan = null;
     }
 
     public void NextRetryButtonClick()

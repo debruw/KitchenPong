@@ -1,11 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using cakeslice;
 
 public class SelectablePan : MonoBehaviour
 {
     public float clamp;
     public GameObject Stick1, Stick2;
+    public GameObject canvasMove, canvasRot;
+
+    private void Start()
+    {
+        GetComponent<Outline>().enabled = false;
+        Stick1.GetComponent<Outline>().enabled = false;
+        Stick2.GetComponent<Outline>().enabled = false;
+        if(GameManager.Instance.currentLevel < 3)
+        {
+            canvasMove.SetActive(true);
+        }
+        if(GameManager.Instance.currentLevel > 4 && GameManager.Instance.currentLevel < 8)
+        {
+            canvasMove.SetActive(false);
+            GameManager.Instance.MovementSlider.gameObject.SetActive(false);
+            canvasRot.SetActive(true);
+        }
+    }
 
     private void OnMouseUp()
     {
@@ -17,7 +36,12 @@ public class SelectablePan : MonoBehaviour
         GameManager.Instance.selecTedPan = gameObject;
         Stick1.GetComponent<Outline>().enabled = true;
         Stick2.GetComponent<Outline>().enabled = true;
-        GameManager.Instance.MovementSlider.value = transform.localPosition.y;
+        GetComponent<Outline>().enabled = true;
+        GameManager.Instance.MovementSlider.value = (transform.localPosition.y / 4) * 100;
+        //if (GameManager.Instance.currentLevel > 4)
+        //{
+        //    GameManager.Instance.RotationSlider.value = (transform.localRotation.y / 2) * 100; 
+        //}
         GameManager.Instance.SliderAndButton.gameObject.SetActive(true);
         if(GameManager.Instance.Tuto11.activeSelf)
         {
@@ -35,6 +59,7 @@ public class SelectablePan : MonoBehaviour
     {
         Stick1.GetComponent<Outline>().enabled = false;
         Stick2.GetComponent<Outline>().enabled = false;
+        GetComponent<Outline>().enabled = false;
     }
 
     private void OnCollisionEnter(Collision collision)

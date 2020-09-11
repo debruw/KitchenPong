@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 330779747626796241, guid: 8762a3a9546cd734dace0686bb563bd4,
     type: 3}
-  waitTime: 3
+  waitTime: 2
 --- !u!1001 &3265704589761130272
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -24,14 +24,17 @@ public class Ball : MonoBehaviour
         {
             // game lose
             // mom anger to camera
+            GameManager.Instance.isGameOver = true;
+            Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
             GameManager.Instance.Yell();
             StartCoroutine(WaitAndcontinue());
         }
         else if (collision.collider.CompareTag("Burner"))
         {
             // Melt the ball
+            GameManager.Instance.isGameOver = true;
             GetComponent<Rigidbody>().velocity = Vector3.zero;
-            Instantiate(ExplosionEffect, transform);
+            Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<TrailRenderer>().enabled = false;
             StartCoroutine(WaitAndcontinue());

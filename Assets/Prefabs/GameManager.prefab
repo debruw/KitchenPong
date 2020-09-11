@@ -61,6 +61,15 @@ MonoBehaviour:
   VibrationButton: {fileID: 0}
   VibrateOn: {fileID: 21300000, guid: ba1725e8152290645b431c244ae5d459, type: 3}
   VibrateOff: {fileID: 21300000, guid: 85402a0cc7a76d34aa2df7a57ad7d57e, type: 3}
+  HelperTriangles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   Tutorial1: {fileID: 0}
   Tuto11: {fileID: 0}
   Tuto12: {fileID: 0}
@@ -68,3 +77,5 @@ MonoBehaviour:
   Tuto21: {fileID: 0}
   Tuto22: {fileID: 0}
   Tutorial3: {fileID: 0}
+  CollectedCoinCount: 0
+  CoinText: {fileID: 0}

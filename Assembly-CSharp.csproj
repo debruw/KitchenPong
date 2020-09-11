@@ -73,7 +73,14 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
-    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\OutlineEffect\Demo\MaterialSwitcher.cs" />
+    <Compile Include="Assets\OutlineEffect\Demo\OutlineAnimation.cs" />
+    <Compile Include="Assets\OutlineEffect\Demo\Rotate.cs" />
+    <Compile Include="Assets\OutlineEffect\Demo\Toggle.cs" />
+    <Compile Include="Assets\OutlineEffect\LinkedSet.cs" />
+    <Compile Include="Assets\OutlineEffect\Outline.cs" />
+    <Compile Include="Assets\OutlineEffect\OutlineEffect.cs" />
+    <Compile Include="Assets\QuickOutline\Scripts\QuickOutline.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\BallCreater.cs" />
     <Compile Include="Assets\Scripts\EndPoint.cs" />
@@ -85,7 +92,9 @@
     <Compile Include="Assets\Scripts\TutorialController.cs" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
     <None Include="Assets\Scripts\NewSurfaceShader.shader" />
+    <None Include="Assets\OutlineEffect\Resources\OutlineShader.shader" />
     <None Include="Assets\QuickOutline\Readme.txt" />
+    <None Include="Assets\OutlineEffect\Resources\OutlineBufferShader.shader" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity Games/KitchenPong/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
